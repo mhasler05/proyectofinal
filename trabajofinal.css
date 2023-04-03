@@ -1,0 +1,23 @@
+.cabecera {
+    background-color: rgb(192, 72, 168);
+    padding: 5px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.logo {
+    text-align: center;
+    background-color: #241e20;
+}
+
+nav {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid red;
+    padding: 10px;
+}
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
