@@ -1,3 +1,6 @@
+header{
+    background-color: #fff;
+}
 .cabecera {
     background-color: rgb(192, 72, 168);
     padding: 5px;
@@ -6,8 +9,8 @@
     text-align: center;
 }
 .logo {
-    text-align: center;
-    background-color: #241e20;
+    text-align:right;
+    background-color: #ffffff;
 }
 
 nav {
@@ -20,4 +23,121 @@ nav li {
     margin-right: 10px;
 }
 
+/* MENU LATERAL**/
 
+body{
+    margin:0px
+    }
+    .barra {
+        font-family: 'Lato', sans-serif;
+        /**Alto y ancho de donde se va a activar cuando pase el mouse**/
+        width:8%;
+        height:9%;
+        position:fixed;
+        /*animacion*/
+        transition: .4s all ;
+        z-index: 1;  
+    }
+    
+    .barra ul{
+        /*solucionar espacios*/
+        padding:0px;
+        text-align: center;
+            
+    }
+    .barra  li{
+        /*Velocidad de transicion*/
+        transition:all .3s;
+        list-style: none; 
+    }
+    
+    .barra a{
+        text-decoration: none;
+        
+        font-weight: normal;
+        transition: .3s all ;
+        /*ocultar elementos*/
+        font-size: 0px;
+        padding:0px;
+    }
+
+    /*barra de busqueda (falta insertar icono*/
+ .barra input{
+    border-radius: 50px;    
+    font-size: 15px;
+    padding: 5px 15px;
+    margin-left: 12%;;
+    text-align: center;
+    font-size: 0px;
+    padding:0px;
+ }
+    
+    .barra  h2{
+        text-align: center;
+        color:white;
+        padding:7px;
+        padding-bottom:7px;
+    
+        /*oculta h2*/
+        font-size:0px;   
+    }
+    
+    .barra img{
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    
+    .barra:hover{
+        /*tamaño cuando el cursor señale la barra*/
+        width: 70%;
+        height: 100vh;
+        
+        /*color*/
+        background: #EFB2D8
+    }
+    .barra:hover h2{
+
+        padding:15px;
+        font-size: 35px;
+    }
+    .barra:hover a{ 
+        font-size:20px ;
+        color:white;
+        /*para que el enlace respete el margen*/
+        display: block;
+        padding:20px;
+    }
+
+    .barra:hover input{
+    
+            font-size:20px ;
+            color:white;
+            /*para que el enlace respete el margen*/
+            display: block;
+            padding:20px;
+    
+    }
+    .barra:hover img{
+        /*Desaparecer imagen*/
+        height:0px;
+    }
+    
+    
+    
+    .barra:hover ul:last-of-type{
+    
+    
+        border-bottom: 1px solid #03121b;
+    }
+    
+    .barra:hover a:hover{ 
+        font-size: 25px;
+        padding: 30px 0px; 
+        background: rgba(0, 0, 0.2);  
+    }
+    
+    @media (min-width: 768px){
+        .barra:hover{
+        width: 45%;
+        }
+    }
