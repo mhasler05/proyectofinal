@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Formularios</title>	>
     <link rel="stylesheet" href="formulario.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     
 </head>
 
@@ -13,23 +17,23 @@
         <form>
             <div class="form-group">
                 <label>Nombre *</label>
-                <input type="text" class="form-control" placeholder="Maria">
+                <input type="text" id="nombre" placeholder="Maria" required>
             </div>
             <div class="form-group">
                 <label>Apellido *</label>
-                <input type="text" class="form-control" placeholder="Perez">
+                <input type="text" id="apellido" placeholder="Perez" required>
             </div>
             <div class="form-group">
-                <label>Ciudad *</label>
+                <label>Ciudad</label>
                 <input type="text" class="form-control" placeholder="Rosario">
             </div>
             <div class="form-group">
                 <label>Correo electrónico *</label>
-                <input type="email" class="form-control" placeholder="maria@correo.com">
+                <input type="email" id="correo" placeholder="maria@correo.com" required>
             </div>
             <div class="form-group">
                 <label>Teléfono*</label>
-                <input type="text" class="form-control" placeholder="3415000000">
+                <input type="tel" id="telefono" name="phone" placeholder="3415000000" required>
             </div>
             <div class="form-group">
                 <label>Motivo de la consulta </label>
@@ -44,6 +48,37 @@
         <p>&nbsp;</p>
 
     </div>
+
+    <script>
+        const nameInput = document.getElementById('nombre');
+        nameInput.addEventListener('input', () => {
+          const regex = /^[a-zA-Z\s]*$/;
+          if (!regex.test(nameInput.value)) {
+            alert('Por favor ingrese solo letras en el campo de nombre.');
+          }
+        });
+        const lastNameInput = document.getElementById('apellido');
+        lastNameInput.addEventListener('input', () => {
+          const regex = /^[a-zA-Z\s]*$/;
+          if (!regex.test(lastNameInput.value)) {
+            alert('Por favor ingrese solo letras en el campo de apellido.');
+          }
+        });
+        const phoneInput = document.getElementById('telefono');
+  phoneInput.addEventListener('input', () => {
+    const regex2 = /^[1-9]*$/;
+    if (isNaN(phoneInput.value)) {
+      alert('Por favor ingrese solo números en el campo de teléfono.');
+    }
+  });
+  const emailInput = document.getElementById('correo');
+  emailInput.addEventListener('input', () => {
+    const regex = /^\S+@\S+\.\S+$/;
+    if (!regex.test(emailInput.value)) {
+      alert('Por favor ingrese un correo electrónico válido.');
+    }
+  });
+      </script>
 </body>
 
 </html>
