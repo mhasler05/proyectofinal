@@ -35,9 +35,14 @@
                 <label>Teléfono*</label>
                 <input type="tel" id="telefono" name="phone" placeholder="3415000000" required>
             </div>
-            <div class="form-group">
-                <label>Motivo de la consulta </label>
-                <input type="text" class="form-control" placeholder="Compra mayorista">
+          <div class="form-group">
+                <label>Motivo <span>(Debe elegir una)</span> </label>
+                <select type="text" id="motivo" required>
+                  <option disabled>Seleccione una opcion</option>
+                  <option value="Reclamo">Reclamo</option>
+                  <option value="Consulta">Consulta</option>
+                  <option value="Realizar un pedido">Realizar un pedido</option>
+                </select><br>
             </div>
             <div class="form-group">
                 <label>Descripcion</label>
