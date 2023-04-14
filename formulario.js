@@ -40,7 +40,6 @@ $(document).ready(function() {
   });
 
   $(document).ready(function() {
-    // Selecciona todos los campos de entrada con la clase "solo-numeros"
     $("#telefono").on("input", function() {
       this.value = this.value.replace(/[^0-9]/g, '');
     });
@@ -49,13 +48,13 @@ $(document).ready(function() {
 var campo1=$("#nombre");
 var campo2=$("#apellido");
 var campo3=$("#email");
-var miBoton=("#botonGuardar")  
+var campo4=$("#telefono"); 
   
   $(document).ready(function() {
     $("#botonGuardar").click(function(){
         
         
-        if (campo1.val() != "" && campo2.val() != "" && campo3.val() != "") {
+        if (campo1.val() != "" && campo2.val() != "" && campo3.val() != "" && campo4.val() != "") {
                 alert("Su formulario fue enviado con exito");
               } else {
                alert("Complete los campos faltantes")
