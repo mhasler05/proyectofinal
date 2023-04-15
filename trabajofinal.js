@@ -10,7 +10,6 @@ function cargar(item){
     mostrador.style.width = "60%";
     seleccion.style.width = "40%";
     seleccion.style.opacity = "1";
-    item.style.border = "2px solid red";
 
     imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
 
