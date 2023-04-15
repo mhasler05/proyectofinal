@@ -385,4 +385,10 @@ footer{
     opacity: 4;
     font-weight: 200;
 }
-
+.sobrenosotros {
+    background-color: rgb(192, 72, 168);
+    padding: 50px;
+    color: #fff;
+    font-family: "Open Sans";
+    text-align: center;
+}
