@@ -1,8 +1,6 @@
-body{
- font-family: 'Nunito', sans-serif;
-}
+
     
-    header{
+header{
     background-color: #fff;
 }
 
@@ -16,7 +14,7 @@ body{
 /* MENU LATERAL**/
 
 
-    .barra {
+.barra {
         font-family: 'Lato', sans-serif;
         /**Alto y ancho de donde se va a activar cuando pase el mouse**/
         width:8%;
@@ -55,6 +53,8 @@ body{
     padding: 5px 15px;
     margin-left: 30%;;
     text-align: center;
+
+    /*ocultar*/
     font-size: 0px;
     padding:0px;
  }
@@ -75,11 +75,11 @@ body{
     }
     
     .barra:hover{
-        /*tamaño cuando el cursor señale la barra*/
+      /*tamaño cuando el cursor señale la barra*/
         width: 70%;
         height: 100vh;
         
-        /*color*/
+     /*color*/
         background: #EFB2D8
     }
     .barra:hover h2{
@@ -90,7 +90,7 @@ body{
     .barra:hover a{ 
         font-size:20px ;
         color:white;
-        /*para que el enlace respete el margen*/
+    /*para que el enlace respete el margen*/
         display: block;
         padding:20px;
     }
@@ -99,22 +99,20 @@ body{
     
             font-size:20px ;
             color:white;
-            /*para que el enlace respete el margen*/
+        /*para que el enlace respete el margen*/
             display: block;
             padding:20px;
     
     }
     .barra:hover img{
-        /*Desaparecer imagen*/
+    /*Desaparecer imagen*/
         height:0px;
     }
     
     
     
     .barra:hover ul:last-of-type{
-    
-    
-        border-bottom: 1px solid #03121b;
+     border-bottom: 1px solid #03121b;
     }
     
     .barra:hover a:hover{ 
@@ -128,21 +126,32 @@ body{
         width: 45%;
         }
     }
+    
+    .redes{
+        display: flex;
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 0 auto;
+        color: white;
 
+    
+    }
 
     /* menu nav*/
 
-    header{
+    nav{
         width: 100%;
+        background: #bdbcbc;
         
     }
     
     .navegacion{
         display: flex;
         justify-content:flex-end;
-        border-top
+        font-weight: bold;
         margin: 30px auto;
-        background: #bdbcbc;
+        z-index: 1;
     }
     
     .navegacion ul{
@@ -153,6 +162,7 @@ body{
         position: relative;
         display: inline-block;
         align-items: center;
+        z-index: 1;
     }
     
     .menu > li > a{
@@ -249,7 +259,6 @@ body{
         transition: .5s ease;
         opacity: 0;
         width: 0%;
-        border: 1px solid #ccc;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -328,6 +337,7 @@ footer{
     }
     .footer-content{
         display: flex;
+        font-weight: bold;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -365,10 +375,7 @@ footer{
         font-size: 1.1rem;
         transition: color .4s ease;
     }
-    .socials a:hover i{
-        color: blueviolet;
-
-    }
+   
 .foooter-bottom{
     background: #000;
     width: 100vw;
