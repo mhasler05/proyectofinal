@@ -20,12 +20,12 @@ header {
 
 
 .barra {
+    position: absolute;
     font-size: 30px;
     font-weight: bold;    
     /**Alto y ancho de donde se va a activar cuando pase el mouse**/
     width: 5%;
     height: 5%;
-    position: fixed;
     /*animacion*/
     transition: .4s all;
     z-index: 1;
