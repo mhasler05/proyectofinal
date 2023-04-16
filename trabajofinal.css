@@ -30,7 +30,6 @@ header {
     z-index: 1;
 }
 
-<<<<<<< HEAD
 .barra ul {
     /*solucionar espacios*/
     padding: 0px;
@@ -66,34 +65,6 @@ header {
     font-size: 0px;
     padding: 0px;
 }
-=======
-
-    
-    .barra  h2{
-        text-align: center;
-        color:white;
-        padding:7px;
-        padding-bottom:7px;
-    
-        /*oculta h2*/
-        font-size:0px;   
-    }
-    
-    .barra img{
-        padding-top: 30px;
-        padding-left: 10px;
-    }
-    
-    .barra:hover{
-      /*tamaño cuando el cursor señale la barra*/
-        width: 70%;
-        height: 100vh;
-        
-     /*color*/
-        background: #EFB2D8
-    }
-    .barra:hover h2{
->>>>>>> 4df0343e7b413b327821c3bef54993d08c08b45b
 
 .barra h2 {
     text-align: center;
@@ -160,298 +131,20 @@ header {
     background: rgba(0, 0, 0.2);
 }
 
+.barra .menu{
+    color: #EFB2D8;
+    font-weight: bold;
+}
+
 @media (min-width: 768px) {
     .barra:hover {
         width: 45%;
     }
-<<<<<<< HEAD
-}
-
-.barra .menu{
-color: #EFB2D8;
-font-weight: bold;
-=======
     
 
->>>>>>> 4df0343e7b413b327821c3bef54993d08c08b45b
 
 }
 
-<<<<<<< HEAD
-.redes {
-    display: flex;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto;
-    color: white;
-
-
-}
-
-/* menu nav*/
-
-nav {
-    width: 100%;
-    background: #bdbcbc;
-
-}
-
-.navegacion {
-    display: flex;
-    justify-content: flex-end;
-    font-weight: bold;
-    margin: 30px auto;
-    z-index: 1;
-}
-
-.navegacion ul {
-    list-style: none;
-}
-
-.menu>li {
-    position: relative;
-    display: inline-block;
-    align-items: center;
-    z-index: 1;
-}
-
-.menu>li>a {
-    display: block;
-    padding: 15px;
-    color: #353535;
-    text-decoration: none;
-}
-
-.menu li a:hover {
-    color: white;
-    background: #333333;
-    transition: all .3s;
-}
-
-/* Submenu*/
-
-.submenu {
-
-    position: absolute;
-    border-color: white;
-    padding: 5px;
-    text-align: start;
-    background: #333333;
-    width: 120%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1.5s;
-}
-
-.submenu li a {
-    display: block;
-    padding: 15px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu li:hover .submenu {
-    visibility: visible;
-    opacity: 1;
-
-}
-
-/* productos*/
-h3 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.contenido {
-    max-width: 1200px;
-    width: 100%;
-    margin: 40px auto;
-    display: flex;
-}
-
-.mostrador {
-    width: 100%;
-    transition: .5s ease;
-}
-
-.mostrador .fila {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.mostrador .fila .item {
-    max-width: 210px;
-    padding: 30px;
-    height: 250px;
-    text-align: center;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: .3s;
-}
-
-.mostrador .fila .item:hover {
-    background-color: #e6e6e6;
-}
-
-.mostrador .fila .item img {
-    width: 100%;
-    margin: 30px 0;
-}
-
-.mostrador .fila .item .descripcion {
-    color: #707070;
-    font-weight: bold;
-}
-
-.mostrador .fila .item .precio {
-    color: #f85151;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.seleccion {
-    transition: .5s ease;
-    opacity: 0;
-    width: 0%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.cerrar {
-    position: absolute;
-    right: 0;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.info {
-    padding: 20px;
-}
-
-.info img {
-    display: block;
-    margin: 30px auto;
-    width: 80%;
-}
-
-.info h2 {
-    color: #707070;
-    margin-bottom: 10px;
-}
-
-.info p {
-    font-size: 14px;
-    color: #707070;
-    margin-bottom: 10px;
-}
-
-.info .precio {
-    font-size: 30px;
-    font-weight: bold;
-    color: #f85151;
-    margin-bottom: 10px;
-    display: block;
-}
-
-.info .fila {
-    display: flex;
-    align-items: flex-end;
-}
-
-.info .fila label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.info .fila select {
-    width: 100px;
-    font-size: 18px;
-    padding: 6px;
-    margin-right: 30px;
-}
-
-.info .fila button {
-    height: 40px;
-    border: none;
-    padding: 0 10px;
-    color: #fff;
-    background-color: #f85151;
-}
-
-
-/*footer*/
-
-
-footer {
-    position: end;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #111;
-    height: auto;
-    width: 100vm;
-    font-family: "Open Sans";
-    padding-top: 40px;
-    color: #fff;
-}
-
-.footer-content {
-    display: flex;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-
-}
-
-.footer-content h3 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-
-.footer-content p {
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-
-}
-
-.socials {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem;
-}
-
-.socials li {
-    margin: 0 10px;
-}
-
-.socials a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.socials a i {
-    font-size: 1.1rem;
-    transition: color .4s ease;
-}
-
-.foooter-bottom {
-=======
     nav{
         width: 100%;
         background: #bdbcbc;
@@ -715,11 +408,9 @@ footer {
     }
     
     .foooter-bottom{
->>>>>>> 4df0343e7b413b327821c3bef54993d08c08b45b
     background: #000;
     width: 100vw;
     text-align: center;
-<<<<<<< HEAD
 }
 
 .foooter-bottom p {
@@ -741,17 +432,3 @@ footer {
     font-family: "Open Sans";
     text-align: center;
 }
-=======
-    }
-    
-    .foooter-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-    }
-    
-    .foooter-bottom span{
-    font-weight: 200;
-    }
-
->>>>>>> 4df0343e7b413b327821c3bef54993d08c08b45b
