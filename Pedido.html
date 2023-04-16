@@ -9,6 +9,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 <script src="pedido.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<link rel="stylesheet" href="pedido.css">
+
 
 </head>
 <body>
@@ -34,7 +36,7 @@
 
 		<label for="cantidad">Cantidad:</label>
 		<input type="number" id="cantidad" name="cantidad" min="1" required><br>
-
+    <br>
         <label for="producto 2">Producto 2:</label>
 		<select type="text" id="producto2" name="producto2">
             <option>Ninguno</option>
@@ -47,6 +49,7 @@
 		<label for="cantidad2">Cantidad:</label>
 		<input type="number" id="cantidad2" name="cantidad2" min="1"><br>
 
+    <br>
         <label for="producto3">Producto 3:</label>
 		<select type="text" id="producto3" name="producto3">
             <option>Ninguno</option>
@@ -58,16 +61,16 @@
 
 		<label for="cantidad3">Cantidad:</label>
 		<input type="number" id="cantidad3" name="cantidad3" min="1"><br>
-
+    <br>
 		<label for="direccion">Dirección de envío:</label>
-		<textarea id="direccion" name="direccion" rows="4" cols="30" required></textarea><br>
-
+		<input type="text" id="direccion" name="direccion" rows="4" cols="30" required></textarea><br>
+<br>
 		<input type="button" value="Mostrar resumen" onclick="mostrarResumen()">
-
-	</form>
-	<div id="resumen"></div>
+    <div id="resumen"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<br>
     <button id="botonPDF">Generar PDF</button>
+	</form>
+
 </body>
 </html>
