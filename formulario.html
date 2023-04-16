@@ -13,6 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script src="formulario.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
     
   </head>
   
@@ -38,7 +40,7 @@
               </div>
               <div class="form-group">
                   <label>Teléfono*</label>
-                  <input type="tel" id="telefono" name="telefono"  maxlength="10"  required>
+                  <input type="tel" id="telefono" name="telefono"  minlength="9" maxlength="10"  required>
               </div>
             <div class="form-group">
                   <label>Motivo <span>(Debe elegir una)</span> </label>
@@ -56,25 +58,9 @@
               <input id="botonGuardar" name="botonGuardar" type="submit" class="btn btn-block btn-lg btn-primary">
           </form>
           <p>&nbsp;</p>
-  
+    <button id="botonPDF">Generar PDF</button>
       </div>
-  <script>
-      var campo1=$("#nombre");
-      var campo2=$("#apellido");
-      var campo3=$("#email");
-      var miBoton=("#botonGuardar")  
-
-      
-          function verificarCampos() {
-              if (campo1.val() != "" && campo2.val() != "" && campo3.val() != "") {
-                miBoton.prop("disabled", false);
-              } else {
-                miBoton.prop("disabled", true);
-              }
-            };
-      
-            verificarCampos();
-          </script>
+  
   </body>
   
   </html>
