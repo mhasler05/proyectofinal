@@ -1,0 +1,42 @@
+body{
+    font-weight: bold;
+    
+}
+
+
+
+form {
+    width: 60%;
+    padding: 16px;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10% ;  
+    background: #EFB2D8;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 10px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+form input[type="button"],
+form select {
+    font-weight: bold;
+    border-radius: 20px;
+
+}
+
+
+button{
+    font-weight: bold;
+    border-radius: 10px;
+}

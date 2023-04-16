@@ -23,11 +23,11 @@
           <h1 class="text-center"></h1>
           <form id="formu">
               <div class="form-group">
-                  <label>Nombre *</label>
+                  <label>Nombre </label>
                   <input type="text" id="nombre" name="nombre" placeholder="Maria" required>
               </div>
               <div class="form-group">
-                  <label>Apellido *</label>
+                  <label>Apellido </label>
                   <input type="text" id="apellido" name="apellido" placeholder="Perez" required>
               </div>
               <div class="form-group">
@@ -35,11 +35,11 @@
                   <input type="text" class="form-control" placeholder="Rosario">
               </div>
               <div class="form-group">
-                  <label>Correo electrónico *</label>
+                  <label>Correo electrónico </label>
                   <input type="email" id="email" name="email" placeholder="maria@correo.com" required>
               </div>
               <div class="form-group">
-                  <label>Teléfono*</label>
+                  <label>Teléfono</label>
                   <input type="tel" id="telefono" name="telefono"  minlength="9" maxlength="10"  required>
               </div>
             <div class="form-group">
@@ -48,7 +48,6 @@
                     <option disabled>Seleccione una opcion</option>
                     <option value="Reclamo">Reclamo</option>
                     <option value="Consulta">Consulta</option>
-                    <option value="Realizar un pedido">Realizar un pedido</option>
                   </select><br>
               </div>
               <div class="form-group">
@@ -56,9 +55,11 @@
                   <textarea class="form-control" rows="5"></textarea>
               </div>
               <input id="botonGuardar" name="botonGuardar" type="submit" class="btn btn-block btn-lg btn-primary">
-          </form>
+              <br>
+              <button id="botonPDF">Generar PDF</button>
+
+            </form>
           <p>&nbsp;</p>
-    <button id="botonPDF">Generar PDF</button>
       </div>
   
   </body>
