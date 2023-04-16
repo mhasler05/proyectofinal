@@ -2,6 +2,7 @@
     
 header{
     background-color: #fff;
+
 }
 
 .logo {
@@ -46,18 +47,7 @@ header{
         padding:0px;
     }
 
-    /*barra de busqueda (falta insertar icono*/
- .barra input{
-    border-radius: 50px;    
-    font-size: 15px;
-    padding: 5px 15px;
-    margin-left: 30%;;
-    text-align: center;
 
-    /*ocultar*/
-    font-size: 0px;
-    padding:0px;
- }
     
     .barra  h2{
         text-align: center;
@@ -127,18 +117,19 @@ header{
         }
     }
     
-    .redes{
-        display: flex;
-        padding-top: 20px;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin: 0 auto;
-        color: white;
 
-    
-    }
 
     /* menu nav*/
+
+    nav{
+        width: 100%;
+        background: #bdbcbc;
+        
+    }
+
+
+    
+    
 
     nav{
         width: 100%;
@@ -318,84 +309,92 @@ header{
         color: #fff;
         background-color: #f85151;
     }
+
+
+    /*Redes*/
+
+    .redes {
+        display: inline-flex;
+        align-items: center;
+      }
+      
+      .redes .icon {
+       background: #EFB2D8;
+       color: black;
+        border-radius: 50%;
+        padding: 15px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+    i{
+        width: 50px;
+        height: 50px;
+    }
+      
+      .redes .tooltip {
+        position: absolute;
+        top: 0;
+        padding: 5px 8px;
+        pointer-events: none;
+      }
     
+      .redes .icon:hover{
+        color: white;
+        background: black;
+      }
 
     /*footer*/
 
 
-footer{
-       position: end;
-       bottom: 0;
-       left: 0;
-       right: 0;
-       background: #111;
-       height: auto;
-       width: 100vm;
-       font-family: "Open Sans";
-       padding-top: 40px;
-       color: #fff;
-    }
-    .footer-content{
-        display: flex;
+    footer{
+        position: absolute;
+        width: 100%;
+        margin-top: 10px;
+        background: #111;
+        height: auto;
+        color: #fff;
+        font-weight: bold;
+     }
+    
+     
+     .footer-content{
         font-weight: bold;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
         text-align: center;
-
+    
     }
+    
     .footer-content h3{
         font-size: 1.8rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        line-height: 3rem;
+        align-items: center;
     }
+    
     .footer-content p{
-        max-width: 500px;
         margin: 10px auto;
         line-height: 28px;
-        font-size: 14px;
-
+        font-size: 16px;
     }
-    .socials{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem 0 3rem;
-    }
-    .socials li{
-    margin: 0 10px;
-    }
-    .socials a{
-        text-decoration: none;
-        color: #fff;
-    }
-    .socials a i {
-        font-size: 1.1rem;
-        transition: color .4s ease;
-    }
-   
-.foooter-bottom{
+    
+    .foooter-bottom{
     background: #000;
     width: 100vw;
-    padding: 200px 0;
     text-align: center;
-}
-.foooter-bottom p{
+    }
+    
+    .foooter-bottom p{
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
-}
-.foooter-bottom span{
-    text-transform: uppercase;
-    opacity: 4;
+    }
+    
+    .foooter-bottom span{
     font-weight: 200;
-}
-.sobrenosotros {
-    background: #EFB2D8;
-    padding: 50px;
-    color: #fff;
-    font-family: "Open Sans";
-    text-align: center;
-}
+    }
+

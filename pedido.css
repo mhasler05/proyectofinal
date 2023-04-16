@@ -3,19 +3,16 @@ body{
     
 }
 
-h1{
-    text-align: center;
-    margin-top: 15%;
-    margin-bottom: 5%;    
-}
+
 
 form {
     width: 60%;
     padding: 16px;
     border-radius: 20px;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25% ;  
+    margin-bottom: 10% ;  
     background: #EFB2D8;
 }
 
